@@ -127,17 +127,43 @@ class MainActivity : AppCompatActivity() {
         Log.d("kotlintest", t.toString())
         */
 
-        val dog = Dog("ポチ", 3)      // 名前をポチ、年齢3歳で、Dogのインスタンスを作る
+//        val dog = Dog("ポチ", 3)      // 名前をポチ、年齢3歳で、Dogのインスタンスを作る
+//
+//        dog.say()
+//        Log.d("kotlintest", "犬の名前は" + dog.name + "です。")
+//        Log.d("kotlintest", "犬の年齢は" + dog.age + "歳です。")
+//
+//        val bigdog = BigDog("ヨーゼフ", 15)     // 名前をヨーゼフ、年齢15歳で、BigDogのインスタンスを作る
+//
+//        bigdog.say()
+//        Log.d("kotlintest", "犬の名前は" + bigdog.name + "です。")
+//        Log.d("kotlintest", "犬の年齢は" + bigdog.age + "歳です。")
 
-        dog.say()
-        Log.d("kotlintest", "犬の名前は" + dog.name + "です。")
-        Log.d("kotlintest", "犬の年齢は" + dog.age + "歳です。")
+        val str1 = "Hello"
+        val str2 = "World"
+        val str3 = "Hello"
 
-        val bigdog = BigDog("ヨーゼフ", 15)     // 名前をヨーゼフ、年齢15歳で、BigDogのインスタンスを作る
+        if (str1.equals(str2)) {
+            Log.d("kotlintest", "str1とstr2は一緒です")
+        } else {
+            Log.d("kotlintest", "str1とstr2は異なります")
+        }
 
-        bigdog.say()
-        Log.d("kotlintest", "犬の名前は" + bigdog.name + "です。")
-        Log.d("kotlintest", "犬の年齢は" + bigdog.age + "歳です。")
+        if (str1.equals(str3)) {
+            Log.d("kotlintest", "str1とstr3は一緒です")
+        } else {
+            Log.d("kotlintest", "str1とstr3は異なります")
+        }
+
+//        val i = 100
+//        val str = i.toString() + " * 100 = ${i * 100}"
+//        Log.d("kotlintest", str)
+
+        Human("a",0,"a").think()
+
+        val str: String? = null
+        val l = str?.length ?: -1
+        Log.d("kotlintest", l.toString())
     }
 
     /*

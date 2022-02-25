@@ -9,6 +9,6 @@ class Human(name: String, age: Int, var hobby: String) : Animal(name, age), Thin
     }
 
     override fun think() {
-        Log.d(formatMyTag(), "私は" + this.hobby + "について考える。")
+        Log.d(formatMyTag(), "私は${this.hobby}について考える。")
     }
 }
